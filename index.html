@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>国服黑名单</title>
+    <title>PCR台四（小小甜心）黑名单</title>
     <link rel="stylesheet" href="main.css?v=1.2">
     <link rel="shortcut icon" type="image/x-icon" href="https://konfan.oss-cn-beijing.aliyuncs.com/pcr/mimi.png" />
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
@@ -21,16 +21,18 @@
     <div id="main-holder">
         <div id="intro">
             <p>
-                这里是用于展示国服公主连结中，<b>被指责</b>有过违规行为账号的页面。
+                这里是用于展示<b>公主连结台四（小小甜心）会战期间</b>，被指责有过违规行为账号的页面。
             </p>
             <p>
                 违规行为<b>仅</b>包括以下四大类：</br>
-                <span>毁号 恶意毁刀 侮辱他人 不出刀</span> 
+                <span>消极出刀 不出刀 侮辱他人 毁号</span> 
             </p>
+        </div>
+        <div id="report-intro">
             <p>
-               想举报账号？<a href="https://bbs.nga.cn/read.php?tid=22065469&_ff=-10308342" target="_blank">我要曝光</a> </br>
-               有疑问？<a href="#about">策略介绍</a> </br>
-               证据链接失效？请使用百度搜索标题，然后在搜索结果中查看快照。 </br>
+               想举报账号？请加群私聊管理<a href="https://jq.qq.com/?_wv=1027&k=HicGkUbM" target="_blank">进行证据提交</a> </br>
+               <!-- 有疑问？<a href="#about">策略介绍</a> </br> -->
+               由于证据来源存在不准确性，请客观评价每个热爱游戏的玩家。 </br>
             </p>
             <p>
             </p>
@@ -49,9 +51,11 @@
                 <thead>
                     <tr>
                         <th>公主连结ID</th>
+                        <th>游戏昵称</th>
+                        <th>QQ</th>
                         <th>原因</th>
                         <th>证据地址</th>
-                        <th>证据快照</th>
+                        <th>时间</th>
                         <th>标题</th>
                     </tr>
                 </thead>
@@ -60,10 +64,11 @@
             </table>
         </div>
         <p id="about">
-            想提交举报或对此页内容有疑问的，请点击最上方的“我要曝光”。</br>
+            想提交举报或对此页内容有疑问的，请点击最上方的“<a href="https://jq.qq.com/?_wv=1027&k=HicGkUbM" target="_blank">进行证据提交</a>”。</br>
             此网站非公主连结Re:Dive官方项目，黑名单仅供参考，请自行判断孰是孰非。</br>
-            更新周期为2～3天一次。</br>
-            last update: <span>2020 8月25日 12:55</span> </br>
+            更新周期为7天一次。</br>
+            repo fork from: <a href="https://github.com/subdance/pcrboard" target="_blank">subdance/pcrboard</a></br>
+            last update: <span>2021年5月2日 21:12</span> </br>
             launched for: <span id="launched-time"></span>
         </p>
     </div>
@@ -71,208 +76,23 @@
         const table = document.querySelector("#main-table");
         const d = [
             {
-                id: '1142303480356',
-                reason: '毁号',
-                prove: 'https://bbs.nga.cn/read.php?tid=22059651',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:epc1PhQ97zsJ:https://bbs.nga.cn/read.php%3Ftid%3D22059651+&cd=1&hl=en&ct=clnk&gl=tw",
-                title: "[风纪区] 挂一个无良会长(磁电)所属公会十伽樱(120名)：求助：代刀时账号遭到恶意毁坏怎么办"
+                id: '481279306',
+                nickname: '三日',
+                qq: '226523291',
+                reason: '消极出刀/不出刀',
+                prove: 'https://nga.178.com/read.php?tid=26561053',
+                time: "2021年3月/2021年4月",
+                title: "[风纪区] 台四前20公会经典和天兔联合出品惊天大瓜"
             },
             {
-                id: '1335716013195',
-                reason: '毁号',
-                prove: 'https://bbs.nga.cn/read.php?tid=21995316',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:YDxI_MflitMJ:https://bbs.nga.cn/read.php%3Ftid%3D21995316+&cd=1&hl=en&ct=clnk&gl=tw",
-                title: "[风纪区] 骗人，毁号，29保1——第一次公会战排名445的公会紫罗兰永恒花园的会长"
-            },
-            {
-                id: '1412076024392',
-                reason: '毁号',
-                prove: 'http://bbs.nga.cn/read.php?tid=22152486',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:2BvxOzl2VzYJ:https://ngabbs.com/read.php%3Ftid%3D22152486+&cd=1&hl=en&ct=clnk&gl=tw",
-                title: "[风纪区]挂个弔人，气死我"
-            },
-            {
-                id: '1287764805193',
-                reason: '毁号',
-                prove: 'https://bbs.nga.cn/read.php?tid=22196398',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:osj5nyXHQ2oJ:https://ngabbs.com/read.php%3Ftid%3D22196398+&cd=1&hl=en&ct=clnk&gl=pl",
-                title: "[风纪区] 挂一个工会战代打后洗号的人 游戏ID1287764805193"
-            },
-            {
-                id: '1374619230788',
-                reason: '恶意毁刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22068148',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:KB6MPXT_mFUJ:https://bbs.nga.cn/read.php%3Ftid%3D22068148+&cd=1&hl=en&ct=clnk&gl=tw",
-                title: "[风纪区] 挂一个破坏合刀，口里说的好，背后却使坏的人。。。。"
-            },
-            {
-                id: '1413401797166',
-                reason: '恶意毁刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22072089',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:zyMvhNlpERUJ:https://ngabbs.com/read.php%3Ftid%3D22072089+&cd=1&hl=en&ct=clnk&gl=jp",
-                title: "[风纪区] 究极警告！！臭皮匠一个！！前排公会绝对小心！！"
-            },
-            {
-                id: '1088319149125',
+                id: '686727705',
+                nickname: '刃哭',
+                qq: '954310565',
                 reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22076210',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:sfu0PJBipUAJ:https://bbs.nga.cn/read.php%3Ftid%3D22076210+&cd=1&hl=en&ct=clnk&gl=jp",
-                title: "[风纪区] 挂人，冲600公会战六天不上线！今早复活！白嫖奖励！"
-            },
-            {
-                id: '1251406200387',
-                reason: '侮辱他人',
-                prove: 'https://bbs.nga.cn/read.php?tid=22082646',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:BJWN230pAS4J:https://ngabbs.com/read.php%3Ftid%3D22082646%26page%3De+&cd=2&hl=en&ct=clnk&gl=jp",
-                title: "[风纪区] 挂一条公会战疯狗,请各位会长小心内鬼"
-            },
-            {
-                id: '1109485206741',
-                reason: '恶意毁刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22063504',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:m8lo_N4Dhg8J:https://bbs.nga.cn/read.php%3Ftid%3D22063504+&cd=1&hl=en&ct=clnk&gl=jp",
-                title: "[国服相关] [风纪区] 挂一个稀世奇才，合刀牛不听指挥大家注意避雷"
-            },
-            {
-                id: '1424679672360',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22086808',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:ScLzVVHXT4EJ:https://ngabbs.com/read.php%3Ftid%3D22086808+&cd=1&hl=en&ct=clnk&gl=jp",
-                title: "[风纪区]id：音无空喵 梅1pyl uid：1424679672360 公会战内鬼避雷"
-            },
-            {
-                id: '1180705195513',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22087226',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:NiBVCPAYaa4J:https://bbs.nga.cn/read.php%3Ftid%3D22087226%26_ff%3D-10308342+&cd=1&hl=en&ct=clnk&gl=jp",
-                title: "[风纪区]“你想看我搞心态？”1200名公会一定要避开这位大爷！"
-            },
-            {
-                id: '1331939040346',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22076969',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:ENL8nicywX0J:https://bbs.nga.cn/read.php%3Ftid%3D22076969+&cd=1&hl=en&ct=clnk&gl=tw",
-                title: "[风纪区] 挂一人，自闭装死，会战期间共出三刀 ID:木兰坠露"
-            },
-            {
-                id: '1071798315537',
-                reason: '侮辱他人',
-                prove: 'https://bbs.nga.cn/read.php?tid=22428852',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:hZFqDdLfRGwJ:https://bbs.nga.cn/read.php%3Ftid%3D22428852+&cd=1&hl=en&ct=clnk&gl=jp",
-                title: "这个人工会后，我们踢了，大伙们小心"
-            },
-            {
-                id: '1147149073932',
-                reason: '恶意毁刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22404800',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:XUBUUjAOnRoJ:https://bbs.nga.cn/read.php%3Ftid%3D22404800+&cd=1&hl=en&ct=clnk&gl=jp",
-                title: "挂一个假box"
-            },
-            {
-                id: '1282344107563',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22414673',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:jKBmDlmmhagJ:https://ngabbs.com/read.php%3Ftid%3D22414673+&cd=1&hl=en&ct=clnk&gl=jp",
-                title: "[风纪区] 挂一个，其他好兄弟们注意一下这人"
-            },
-            {
-                id: '1251853867565',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22450958',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:kYcaqmnlp7gJ:https://bbs.nga.cn/read.php%3Ftid%3D22450958+&cd=1&hl=en&ct=clnk&gl=jp",
-                title: "[风纪区] 前600工会 挂一个内鬼 找别人代刀态度当大爷然后退群不出刀"
-            },
-            {
-                id: '1033249963520',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22433319',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:LtPBAv3CUikJ:https://bbs.nga.cn/read.php%3Ftid%3D22433319+&cd=1&hl=en&ct=clnk&gl=jp",
-                title: "[风纪区] 2800工会，挂一个会战第二天假装失联却在隔壁游戏自曝的瓜皮"
-            },
-            {
-                id: '1248877406735',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22424656',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:eIZSwmAbn9gJ:https://bbs.nga.cn/read.php%3Ftid%3D22424656+&cd=1&hl=en&ct=clnk&gl=jp",
-                title: "[风纪区] 常在瓜田走，哪有不吔瓜，给各位前排工会会长提个醒，一个标准内鬼(多图，有理有据)"
-            },
-            {
-                id: '1168936593944',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22447148&_ff=-10308342',
-                screenshot: "http://webcache.googleusercontent.com/search?q=cache:uBC8slPOSTMJ:g.nga.cn/read.php%3Ftid%3D22447148+&cd=1&hl=en&ct=clnk",
-                title: "[风纪区] B服，Q.S.S.D,冲前二百公会，上期289. 吃瓜一个混子咬人"
-            },
-            {
-                id: '1396220689901',
-                reason: '恶意毁刀',
-                prove: 'https://tieba.baidu.com/p/6793147928?share=9105&fr=share&see_lz=0&sfc=copy&client_type=2&client_version=10.3.8.34&st=1594555584&unique=2690F645960E48DA1EA635D9C448245E&red_tag=2217679697',
-                screenshot: "http://cache.baiducontent.com/c?m=RriJUsMZQK-HHydiF454q2oxYh_LtCUWFAypmrGbxqSqt3kXa0OcihvCXZpggsKVzWC3fgGGDaiYtJO-3XH4-XMqBvkM3GI5LUs_FHEH1Na68s8UsPWoebmzRkS-JPBe4wrJ5HDGWQxGOSeDqDrGxmKLbwEaKCy4bVt3eXTVp8eeM9V6gsvcEt4wUq7gqtOTRuiQL1Q52dLKjdK-civW64L1ZnQ9eku2UH0hnd_ss98Df8Zkid9Pai44X08_PMLFdjHpJAaIfix6PZARP1308K&p=9c7cc64ad4d811a05ee7d20c5b50&newp=8b2a9715d9c54bb143b4856d495e92695803ed603fd5d501298ffe0cc4241a1a1a3aecbf2d261002d8c67b6104ac4359e0f23272350834f1f689df08d2ecce7e&s=cfcd208495d565ef&user=baidu&fm=sc&query=%B9%D2%B8%F6%BB%EC%B9%A4%D7%CA%B5%C4%2C%C4%E3%C3%C7%D5%D0%C8%CB%BA%C3%BA%C3%BF%B4%D7%C5%B5%E3%B0%C9&qid=d29b7ce6000146b2&p1=1",
-                title: "挂个混工资的，你们招人好好看着点吧"
-            },
-            {
-                id: '1343712120327',
-                reason: '侮辱他人 恶意毁刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22762745',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:Y9v99NoJnK8J:https://bbs.nga.cn/read.php%3Ftid%3D22762745+&cd=1&hl=en&ct=clnk",
-                title: "挂一个掉刀还自闭刀不敢出来对线的**"
-            },
-            {
-                id: '1393643309198',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22797633',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:khifNyAJbrIJ:https://bbs.nga.cn/read.php%3Ftid%3D22797633+&cd=11&hl=en&ct=clnk",
-                title: "[挂人] 挂个内鬼"
-            },
-            {
-                id: '1290872773125',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22797801',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:6TeNNZfFZ28J:https://ngabbs.com/read.php%3Ftid%3D22797801+&cd=1&hl=en&ct=clnk",
-                title: "[挂人] 挂一个公会战一刀不出的混子"
-            },
-            {
-                id: '1377819461178',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22798538',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:ACmbw-OeVvMJ:https://bbs.nga.cn/read.php%3Ftid%3D22798538+&cd=1&hl=en&ct=clnk",
-                title: "[挂人]巨蟹座公会战2800公会47w战力自闭刀伤害极低，后不出刀"
-            },
-            {
-                id: '1028432096317',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22803213',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:y9qc7vDUaPMJ:https://g.nga.cn/read.php%3Ftid%3D22803213+&cd=1&hl=en&ct=clnk",
-                title: "[风纪区] [挂人] [多图预警] 想白嫖前200的女内鬼，演技一流人设复杂，会长看了直呼内鬼中的精英"
-            },
-            {
-                id: '1364719966769',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22805723',
-                screenshot: "http://webcache.googleusercontent.com/search?q=cache:-jjSrcRG8WoJ:ngabbs.com/read.php%3Ftid%3D22805723+&cd=1&hl=en&ct=clnk",
-                title: "[多图预警] [挂人] [风纪区] 挂一五千档公会不出刀内鬼(有大小两个号)"
-            },
-            {
-                id: '1147782315554',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22770501',
-                screenshot: "https://webcache.googleusercontent.com/search?q=cache:FR3iaJP9xncJ:https://bbs.nga.cn/read.php%3Ftid%3D22770501+&cd=1&hl=en&ct=clnk",
-                title: "[风纪区] [挂人] 没想到只在NGA招人的2800小会也能遇到内鬼 第二天开始退群删好友一刀不出"
-            },
-            {
-                id: '1183829881956',
-                reason: '不出刀',
-                prove: 'https://bbs.nga.cn/read.php?tid=22822893',
-                screenshot: "http://webcache.googleusercontent.com/search?q=cache:VphBpfbCZRQJ:g.nga.cn/read.php%3Ftid%3D22822893+&cd=1&hl=en&ct=clnk",
-                title: "[风纪区] 挂一个四期会战一期不漏地漏刀的“好兄弟”，其他公会收人注意"
-            },
-            {
-                id: '1063909345924',
-                reason: '毁号',
-                prove: 'https://bbs.nga.cn/read.php?tid=22979947',
-                screenshot: "http://webcache.googleusercontent.com/search?q=cache:uvSVeQAeVrQJ:nga.178.com/read.php%3Ftid%3D22979947+&cd=1&hl=en&ct=clnk",
-                title: "[奇人共赏] [公会挂人] 前排公会预警，挂一个偷号洗号证据确凿依旧不认的奇人。uid：1063 909 345 924"
-            },
+                prove: 'https://nga.178.com/read.php?tid=25341835',
+                time: "2021年1月",
+                title: "[风纪区] 台四前20挂个装死内鬼 附id"
+            }
         ];
         function appendToNode(parentNode, tagName, innerHTML) {
             const ele = document.createElement(tagName);
@@ -293,7 +113,7 @@
             node.classList.add("target-tr");
         }
         function getDiff() {
-            const diff = new Date() - new Date(2020, 5, 6, 14, 44);
+            const diff = new Date() - new Date(2021, 4, 2, 20, 30);
             const node = document.querySelector("#launched-time");
             node.innerHTML = Number.parseInt( diff / 60 / 60 / 1000) + '小时';
         }
@@ -314,9 +134,11 @@
         d.forEach((item, index) => {
             const innerHTML = `
                 <td class='ids' id=id-${item.id.trimAll()}>${item.id}</td>
+                <td class='qq'>${item.nickname}</td>
+                <td class='qq'>${item.qq}</td>
                 <td class='reason-td'>${item.reason}</td>
                 <td><a class='link-td' href=${item.prove} target='_blank'>NGA</td>
-                <td><a class='link-td' href=${item.screenshot} target='_blank'>谷歌链接</td>
+                <td class='time'>${item.time}</td>
                 <td class="title">${item.title}</td>
             `
             appendToNode(table, "tr", innerHTML);
