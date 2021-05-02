@@ -117,7 +117,7 @@
                 qq: '',
                 reason: '不出刀',
                 prove: 'https://nga.178.com/read.php?tid=24924975',
-                time: "2020年12月",
+                time: "2020年9月/2020年12月",
                 title: "[风纪区] 台四小小甜心， 黑名单1位"
             },
             {
@@ -189,7 +189,7 @@
             const innerHTML = `
                 <td class='ids' id=id-${item.id.trimAll()}>${item.id}</td>
                 <td class='qq'>${item.nickname}</td>
-                <td class='qq'>${item.qq}</td>
+                <td class='qq'>${item.qq !== '' ? item.qq : "无"}</td>
                 <td class='reason-td'>${item.reason}</td>
                 <td><a class='link-td' href=${item.prove} target='_blank'>${item.prove !== '' ? "NGA" : "无"}</td>
                 <td class='time'>${item.time}</td>
