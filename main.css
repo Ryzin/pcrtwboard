@@ -1,0 +1,247 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #100e17;
+}
+.table-holder {
+    position: relative;
+}
+table::after, table::before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    color: white;
+    line-height: 180px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    z-index: 999;
+}
+table::before {
+    content: "给我布丁!";
+    background-image: url(https://konfan.oss-cn-beijing.aliyuncs.com/pcr/pudding.png);
+    left: -60px;
+    top: -60px;
+    transform: rotateZ(-10deg);
+}
+table::after {
+    content: "抽到我了吗";
+    background-image: url(https://konfan.oss-cn-beijing.aliyuncs.com/pcr/xcw.png);
+    right: -60px;
+    bottom: -60px;
+    transform: rotateZ(15deg);
+}
+    
+table {
+    margin: auto;
+    border-collapse: collapse;
+    position: relative;
+    margin-top: 60px;
+}
+th, td {
+    border: 1px solid rgba(153, 153, 153, 0.315);
+    padding: 5px;
+    text-align: center;
+    min-width: 100px;
+    color: #c2c2c2;
+}
+th {
+    /* position: sticky; */
+    top: 0px;
+    color: white;
+    background-color: #100e17;
+    /* z-index: 0; */
+}
+.link-td {
+    background: -webkit-linear-gradient(45deg, #ff8a00,#e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration-color: #ff8a00!important;
+}
+.title {
+    font-size: 12px;
+}
+#intro > p {
+    font-size: 12px;
+    text-align: center;
+    margin: 5px;
+    color: #909399;
+}
+#intro > p > span {
+    /* color: #F56C6C; */
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: #3cefff;
+    /* font-weight: bold; */
+    font-size: 16px;
+}
+#intro > p > a {
+    color: #fc2f70;
+    font-style: italic;
+}
+.target-tr {
+    background-color: #ff8a00;
+    color: white;
+    transition: all 0.5s;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+#input-holder {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+#about {
+    margin-top: 100px;
+    font-size: 12px;
+    color: #909399;
+    text-align: center;
+}
+#about > span {
+    color: #409EFF;
+}
+
+/* input effect*/
+.input-box {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+  }
+.input-box > input {
+    width: 150px;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom-color: hsla(341, 97%, 59%, 0.2);
+    border-radius: 0;
+    color: white;
+}
+.input-box > input:focus {
+    outline: none;
+    border-bottom-color: transparent;
+}
+.input-box > span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+    background-color: #fc2f70;
+    transform-origin: center;
+    transform: translate(-50%, 0) scaleX(0);
+    transition: all 0.3s ease;
+  }
+.input-box > input:focus ~ span {
+    transform: translate(-50%, 0) scaleX(1);
+    opacity: 1;
+}
+
+/* bubble button effect */
+.bubble {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+}
+.bubble::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #3cefff;
+    transform-origin: center;
+    transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+}
+.bubble:hover {
+    cursor: pointer;
+    color: #161616;
+}
+.bubble:hover::before {
+    transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    table::before {
+        top: auto;
+        left: 0px;
+        bottom: -110px;
+        transform: rotateZ(-10deg);
+    }
+    table::after {
+        right: 0px;
+        bottom: -110px;
+        transform: rotateZ(15deg);
+    }
+    #about {
+        margin-top: 120px;
+    }
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr {    
+         border-top: 1px solid rgba(153, 153, 153, 0.315);
+    }
+    tr:last-of-type {
+        border-bottom: 1px solid rgba(153, 153, 153, 0.315);
+    }
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+        white-space: nowrap;
+        font-size: 16px;
+        font-weight: bold;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "公主连结ID"; }
+	td:nth-of-type(2):before { content: "原因";}
+	td:nth-of-type(3):before { content: "证据地址"; }
+	td:nth-of-type(4):before { content: "谷歌快照"; }
+	td:nth-of-type(5):before { content: "标题"; }
+}
