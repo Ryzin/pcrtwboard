@@ -68,7 +68,7 @@
             此网站非公主连结Re:Dive官方项目，黑名单仅供参考，请自行判断孰是孰非。</br>
             更新周期为7天一次。</br>
             repo fork from: <a href="https://github.com/subdance/pcrboard" target="_blank">subdance/pcrboard</a></br>
-            last update: <span>2021年5月2日 21:12</span> </br>
+            last update: <span>2021年5月2日 22:29</span> </br>
             launched for: <span id="launched-time"></span>
         </p>
     </div>
@@ -83,6 +83,15 @@
                 prove: 'https://nga.178.com/read.php?tid=26561053',
                 time: "2021年3月/2021年4月",
                 title: "[风纪区] 台四前20公会经典和天兔联合出品惊天大瓜"
+            },
+            {
+                id: '705274223',
+                nickname: '忘生',
+                qq: '2438268825',
+                reason: '不出刀',
+                prove: '',
+                time: "2021年4月",
+                title: "公会会长提供聊天截图"
             },
             {
                 id: '686727705',
@@ -137,7 +146,7 @@
                 <td class='qq'>${item.nickname}</td>
                 <td class='qq'>${item.qq}</td>
                 <td class='reason-td'>${item.reason}</td>
-                <td><a class='link-td' href=${item.prove} target='_blank'>NGA</td>
+                <td><a class='link-td' href=${item.prove} target='_blank'>${item.prove !== '' ? "NGA" : "无"}</td>
                 <td class='time'>${item.time}</td>
                 <td class="title">${item.title}</td>
             `
