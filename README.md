@@ -1,2 +1,10 @@
-# pcrtwboard
- 公主连结台四黑名单
+# 公主连结台四会战黑名单
+ Princess Connect Re:Dive (Taiwan) Clan Battle Black List
+
+## 
+
+## 简介
+ - 公主连结，或者称为公主链接、PCR，是日本厂商cygames旗下运营的一款手游。游戏中存在公会和每月团队竞赛的机制。
+ - 众所周知招人一直都是各个公会很头疼的事情，而且台四的人少的可怜，招到内鬼就更头疼了。
+ - 所以，弄了个会战黑名单，看看能不能长期维护下去。
+ - 本项目是鶸技术，本懒狗也没有对[subdance/pcrboard](https://github.com/subdance/pcrboard)进行持久化。人多了以后再说吧（
